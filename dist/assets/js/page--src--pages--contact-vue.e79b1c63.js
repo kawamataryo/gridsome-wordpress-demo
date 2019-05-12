@@ -1,0 +1,1 @@
+(window.webpackJsonp=window.webpackJsonp||[]).push([[4],{203:function(t,n,e){"use strict";e.r(n);var a={name:"Contact"},c=e(77),s=Object(c.a)(a,function(){var t=this.$createElement,n=this._self._c||t;return n("layout",[n("h1",[this._v("Contact")]),n("p",[this._v("ジャーナル戦略的バス建築。画面販売バナー呼ぶダイヤモンド建築。サンプル画面建築電話評議会省略ピック。")])])},[],!1,null,"3c0a173b",null);n.default=s.exports}}]);
