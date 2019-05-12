@@ -1,45 +1,33 @@
 <template>
   <Layout>
-    <h1>Welcome to my blog :)</h1>
-    <ul class="post-list">
-      <li v-for="{ node } in $page.allWordPressPost.edges" :key="node.id">
-        <Post :post="node" />
-      </li>
-    </ul>
-    <Pager :info="$page.allWordPressPost.pageInfo"/>
+    
+    <!-- Learn how to use images here: https://gridsome.org/docs/images -->
+    <g-image alt="Example image" src="~/favicon.png" width="135" />
+    
+    <h1>Hello, world!</h1>
+   
+    <p>
+      Lorem ipsum dolor sit amet, consectetur adipisicing elit. Pariatur excepturi labore tempore expedita, et iste tenetur suscipit explicabo! Dolores, aperiam non officia eos quod asperiores
+    </p>
+
+    <p class="home-links">
+      <a href="https://gridsome.org/docs" target="_blank" rel="noopener">Gridsome Docs</a>
+      <a href="https://github.com/gridsome/gridsome" target="_blank" rel="noopener">GitHub</a>
+    </p>
+
   </Layout>
 </template>
 
-<page-query>
-query Home ($page: Int) {
-  allWordPressPost (page: $page, perPage: 10) @paginate {
-    pageInfo {
-      totalPages
-      currentPage
-    }
-    edges {
-      node {
-        id
-        title
-        path
-        excerpt
-      }
-    }
-  }
-}
-</page-query>
-
 <script>
-import { Pager } from 'gridsome'
-import Post from '~/components/Post.vue'
-
 export default {
-  components: {
-    Pager,
-    Post
-  },
   metaInfo: {
-    title: 'Welcome to my blog :)'
+    title: 'Hello, world!'
   }
 }
 </script>
+
+<style>
+.home-links a {
+  margin-right: 1rem;
+}
+</style>
